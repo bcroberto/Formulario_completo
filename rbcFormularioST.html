@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Formulario Completo</title>
+</head>
+<body>
+    <form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+        <table border=1>
+            <tr>       
+                <th colspan="2">User Form</th>
+            </tr>  
+            <tr>
+                <td><label for="ename">Nombre</label></td>
+                <td><input type="text" name="nombre" id="ename" placeholder="Escriba su nombre"></td>
+            </tr>  
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password"id="password" placeholder="Ingrese una contraseña"></td>
+            </tr>
+            <tr >
+                <td><label for="direccion">Dirección</label></td>
+                <td><textarea id="direccion" name="direccion" placeholder="Escriba su dirección"></textarea></td>
+            </tr>
+            <tr>
+                <td>Deporte</td>
+                <td>
+                    <input type="checkbox" name="deportes[]" id="hockey" value="Hockey"><label for="hockey">Hockey</label><br>
+                    <input type="checkbox" name="deportes[]" id="football" value="Football"><label for="football">Football</label><br>
+                    <input type="checkbox" name="deportes[]" id="badminton" value="Badminton"><label for="badminton">Badminton</label><br>
+                    <input type="checkbox" name="deportes[]" id="cricket" value="Cricket"><label for="cricket">Cricket</label><br>
+                    <input type="checkbox" name="deportes[]" id="voleyball" value="Voleyball"><label for="voleyball">Volleyball</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>
+                    <label for="emale">
+                    <input type="radio" id="emale" name="sexo" value="Hombre">Hombre</label>
+                    <label for="efemale">
+                    <input type="radio" id="efemale" name="sexo" value="Mujer">Mujer</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="combo_edad">Selecciona edad</label>
+                </td>
+                <td>
+                    <select name="edad" id="combo_edad">
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="+19">+19</option>
+                        <option value="0" SELECTED>Selecciona la edad</option>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="file" value="Examinar">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Click Me">
+                    <input type="reset" value="Restablecer">
+                    <input type="submit"> 
+                </th>
+            </tr>             
+        </table>
+    </form>
+</body>
+</html>
